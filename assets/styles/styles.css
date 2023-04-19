@@ -154,6 +154,12 @@ header .dropdown-toggle::after {
   text-decoration: none;
 }
 
+.card .collapsible-btn:hover,
+.card .collapsible-btn:focus,
+.card .collapsible-btn.active {
+  opacity: .8;
+}
+
 .photo-lists .card .card-content.collapsed-text {
   height: auto;
 }
@@ -213,10 +219,13 @@ header .dropdown-toggle::after {
   display: inline-block;
 }
 
+#card-container .card a {
+   color: #292929;
+} 
 #card-container .card a:hover,
 #card-container .card a:focus,
 #card-container .card a.active {
-   color: #292929;
+  opacity: .8;
 }
 
 @media screen and (max-width: 992px) {
