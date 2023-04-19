@@ -213,6 +213,12 @@ header .dropdown-toggle::after {
   display: inline-block;
 }
 
+#card-container .card a:hover,
+#card-container .card a:focus,
+#card-container .card a.active {
+   color: #292929;
+}
+
 @media screen and (max-width: 992px) {
   header .main-nav .nav-link {
     border: none !important;
