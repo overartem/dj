@@ -3,7 +3,6 @@ let page = 1;
 let loader = document.querySelector(".author-loader");
 
 const loadMore = (limit) => {
-  console.log(page);
   if (page == 50) return;
   getData("https://picsum.photos/v2/list?page=" + page + "&limit=" + limit);
   page++;
