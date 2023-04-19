@@ -1,0 +1,230 @@
+body {
+  font-family: "Commissioner", "Helvetica Neue", "Arial", sans-serif;
+  color: #666;
+}
+
+header {
+  transition: all 0.5s ease;
+}
+
+header > .container,
+footer > .container,
+.main-wrapper {
+  max-width: 1152px;
+}
+
+header .form-control {
+  color: #666;
+}
+
+header .main-nav .nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+/*removing jump on the item hover (for bold)*/
+header .main-nav .nav-link::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+
+header .main-nav .active,
+header .main-nav .nav-link:hover,
+header .main-nav .nav-link:focus {
+  font-weight: 700;
+  color: #292929;
+  border-bottom: 2px solid #ed7135;
+}
+
+header .sub-nav .nav-link:focus,
+header .sub-nav .nav-link:hover {
+  color: #ed7135;
+}
+
+header .dropdown-toggle::after {
+  border: solid #666;
+  border-width: 0 2px 2px 0;
+  padding: 2px;
+  margin-left: 8px;
+  transform: rotate(45deg);
+}
+
+.header-links {
+  color: #666;
+}
+
+.border,
+.border-bottom {
+  border-color: #ebebeb;
+}
+
+.searchform .search-field {
+  background: #eeeeee;
+  height: 40px;
+}
+
+.bi-search {
+  stroke: #666;
+  stroke-width: 1px;
+}
+
+.main-wrapper .sidebar .nav-link {
+  padding: 10px 15px;
+  color: #666;
+}
+
+.main-wrapper .sidebar .nav-link .nav-icon {
+  margin-right: 10px;
+}
+
+.main-wrapper .sidebar .nav li {
+  margin-bottom: 1px;
+}
+
+.main-wrapper .sidebar .nav-link.active,
+.main-wrapper .sidebar .nav-link:hover,
+.main-wrapper .sidebar .nav-link:focus {
+  background: #ed7135;
+  color: #fff;
+}
+
+.main-content h1 {
+  color: #292929;
+}
+
+.sidebar .sidebar-nav {
+  margin-top: 2px;
+}
+
+.main-content .photo-counter {
+  font-size: 14px;
+}
+
+.main-content .photo-sorter {
+  margin-top: 10px;
+}
+
+.main-content .photo-sorter .sorter-item-link {
+  color: #292929;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.main-content .photo-sorter .item-nav-new .sorter-item-link {
+  border-color: #292929 !important;
+}
+
+.main-content .photo-sorter .item-nav-last .sorter-item-link {
+  border-color: #ebebeb !important;
+}
+
+.main-content .photo-sorter .sorter-item-link.active,
+.main-content .photo-sorter .sorter-item-link:hover {
+  color: #fff;
+  background: #292929;
+  border-color: #292929 !important;
+}
+
+.main-content .photo-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-auto-rows: auto;
+}
+
+.photo-lists .card {
+  border-color: #ebebeb;
+}
+
+.photo-lists .card .card-title {
+  color: #292929;
+}
+
+.photo-lists .card .card-content {
+  height: 3rem;
+  overflow: hidden;
+}
+
+.card .collapsible-btn {
+  color: #292929;
+  text-decoration: none;
+}
+
+.photo-lists .card .card-content.collapsed-text {
+  height: auto;
+}
+
+.photo-lists .card .btn-primary {
+  background: #ed7135;
+  border-color: #ed7135;
+  color: #fff;
+}
+
+.photo-lists .card .card-action {
+  width: calc(100% + 48px);
+  font-size: 0;
+  margin-left: -24px;
+  margin-right: -24px;
+  border-color: #ebebeb;
+}
+
+.photo-lists .card .card-action .btn {
+  border-width: 2px;
+}
+
+.photo-lists .card .btn-outline-secondary {
+  border-color: #ebebeb;
+  color: #292929;
+}
+
+.photo-lists .card .btn-outline-secondary:hover,
+.photo-lists .card .btn-outline-secondary:focus,
+.photo-lists .card .btn-outline-secondary.active {
+  color: #fff;
+  border-color: #292929;
+  background: #292929;
+}
+
+.photo-lists .card .btn-primary:hover,
+.photo-lists .card .btn-primary:focus,
+.photo-lists .card .btn-primary.active {
+  color: #fff;
+  border-color: #d9662f;
+  background: #d9662f;
+}
+
+.photo-lists .card .card-text {
+  color: #666;
+}
+
+.up-top-link {
+  color: #ed7135;
+}
+
+.author-loader {
+  display: none;
+}
+
+.loader-visible {
+  display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+  header .main-nav .nav-link {
+    border: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-content .photo-lists {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  header .container-content .dropdown {
+    width: 100%;
+  }
+}
