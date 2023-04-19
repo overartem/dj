@@ -221,7 +221,8 @@ header .dropdown-toggle::after {
 
 #card-container .card a {
    color: #292929;
-} 
+}
+
 #card-container .card a:hover,
 #card-container .card a:focus,
 #card-container .card a.active {
